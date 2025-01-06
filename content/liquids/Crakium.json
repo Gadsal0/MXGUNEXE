@@ -1,0 +1,8 @@
+{
+	"name": "Crakium",
+	"description": "Extrae Crakium Debajo De La Tierra",
+	"temperature": 0,
+    "viscosity": 0.8,
+    "color": "a4a2bd",
+    "HeatCapacity":100
+}
