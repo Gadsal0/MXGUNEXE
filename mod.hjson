@@ -1,8 +1,7 @@
-name: "mxegun"
-displayName: "mxegun"
-author: '''gadsal0'''
-description: '''funneh'''
-
+name:"mxegun"
+displayName:"mxegun"
+author:"gadsal0"
+description:"Nothing to see here"
 version: "1.0"
 minGameVersion: "146"
 repo: "https://github.com/Gadsal0/MXGUNEXE"
