@@ -1,0 +1,9 @@
+name: Crakium
+description: liquido refrigerante poderoso
+temperature: 0
+coolant:true
+color: 5b0582
+gascolor:5b0582
+barcolor:5b0582
+heatCapacity:100
+explosiveness:1

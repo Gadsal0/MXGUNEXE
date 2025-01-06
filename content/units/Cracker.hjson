@@ -1,0 +1,94 @@
+type: flying
+name: Cracker
+health: 5000
+speed: 10
+hitSize: 5
+omniMovement: true
+outlineColor: 2d2f39
+flying: true
+layerOffset: -1
+trailColor: 6107b5
+trailLength: 5
+engineSize: 2.8 
+engineOffset: 7
+engineColor: aa4dff
+
+weapons: [
+ {
+       name:Crackerer
+       rotate:true
+       shootCone: 140
+       mirror: true
+       shootEffect: none 
+       x: 5
+       y: -1.5
+       shootSound: mchgun
+       reload:30
+       bullet: {
+        type: LaserBulletType
+        colors: [c78dfc,aa4dff,8500ff]
+        speed: 2
+        lifetime: 10
+        damage: 250
+        width: 10
+        length: 350
+        hitEffect: hitLancer
+        chargeEffect: lancerLaserCharge
+        } 
+
+     } 
+
+ {
+       name:Crackerer
+       rotate:true
+       shootCone: 140
+       mirror: true
+       shootEffect: none 
+       x: 3.5
+       y: 1.5
+       shootSound: mchgun
+       reload:5
+       bullet: {
+            type: SapBulletType
+            damage: 50
+            color:c78dfc
+            length: 250
+            width: 0.6
+            sapstrength:1
+        } 
+
+     } 
+
+
+   {
+      name: CrackingRocketLauncher
+      x: 0,
+      y: -1,
+      rotateSpeed: 2.5,
+      targetAir: false,
+      targetGround: true,
+      mirror: false,
+      rotate: true,
+      shootEffect: "missileTrail",
+      layerOffset: 1,
+      targetAir: false,
+      targetGround: true,
+      ignoreRotation: true,
+      followRotation: true,
+      rotateShooting: false,
+      reload: 450,
+      recoil: 1.7,
+      shootSound: "missileSmall",
+      bullet: {
+        type: MissileBulletType,
+        spawnUnit: CrackingRocket
+      }
+    }
+ ]
+
+ research: {
+  parent: megalofabricator
+  requirements: [
+    silicon/100
+  ]
+}

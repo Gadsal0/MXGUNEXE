@@ -1,0 +1,128 @@
+type: flying,
+name: Kraken,
+health: 25500,
+speed: 5,
+hitSize: 20,
+omniMovement: true,
+outlineColor: 2d2f39,
+flying: true,
+layerOffset: -1,
+trailColor: 6107b5,
+trailLength: 5,
+trailScl:1,
+engineSize: 6,
+engineOffset: 13,
+engineColor: aa4dff,
+
+weapons: [
+
+  {
+      name: CrackingRocketLauncher
+      x: 10,
+      y: -4,
+      rotateSpeed: 2.5,
+      targetAir: false,
+      targetGround: true,
+      mirror: true,
+      rotate: true,
+      shootEffect: "missileTrail",
+      layerOffset: 1,
+      targetAir: false,
+      targetGround: true,
+      ignoreRotation: true,
+      followRotation: true,
+      rotateShooting: false,
+      reload: 245,
+      recoil: 1.7,
+      shootSound: "missileSmall",
+      bullet: {
+        type: MissileBulletType,
+        spawnUnit: CrackingRocket,
+      }
+    }
+
+  {
+      name: PurpleSniper,
+      x: 0,
+      y: -4,
+      rotateSpeed: 2.5,
+      targetAir: false,
+      targetGround: true,
+      mirror: false,
+      rotate: true,
+      layerOffset: 1,
+      targetAir: false,
+      targetGround: true,
+      ignoreRotation: true,
+      followRotation: true,
+      rotateShooting: false,
+      reload: 122.5,
+      recoil: 1.7,
+      shootSound: "sniper",
+      bullet: {
+      type: RailBulletType
+        lifetime: 10,
+        damage: 1000,
+        width: 10,
+        length: 500,
+        pierce:false
+
+      }
+    }
+
+ {
+       name:Crackerer
+       rotate:true
+       shootCone: 140
+       mirror: true
+       shootEffect: none 
+       x: 4
+       y: 7
+       shootSound: mchgun
+       reload:30
+       bullet: {
+        type: LaserBulletType
+        colors: [c78dfc,aa4dff,8500ff]
+        speed: 2
+        lifetime: 10
+        damage: 850
+        width: 10
+        length: 350
+        hitEffect: hitLancer
+        chargeEffect: lancerLaserCharge
+        } 
+
+     } 
+
+      {
+       name:Crackerer
+       rotate:true
+       shootCone: 140
+       mirror: true
+       shootEffect: none 
+       x: 7
+       y: 7
+       shootSound: mchgun
+       reload:15
+       bullet: {
+        type: LaserBulletType
+        colors: [c78dfc,aa4dff,8500ff]
+        speed: 2
+        lifetime: 10
+        damage: 425
+        width: 10
+        length: 200
+        hitEffect: hitLancer
+        chargeEffect: lancerLaserCharge
+        } 
+
+     } 
+
+ ]
+
+ research: {
+  parent: megalofabricator
+  requirements: [
+    silicon/100
+  ]
+}

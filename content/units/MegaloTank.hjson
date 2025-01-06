@@ -1,0 +1,147 @@
+type: tank
+name: Megalo
+description: ta-op
+hitSize: 27
+health: 45000
+armor: 8
+omniMovement: false,
+speed: 4.5
+rotateSpeed: 5
+range: 75
+envEnabled: 14
+envDisabled: 2
+outlineColor: "2d2f39"
+layerOffset: -1
+
+weapons: [
+  {
+    name: antiairflakker
+    x: 2
+    y: 7
+    rotateSpeed: 10
+    mirror: true
+    rotate: true
+    layerOffset: 3
+    ignoreRotation: false
+    followRotation: true
+    rotateShooting: false
+    shootEffect: shootSmall
+    reload: 8
+    recoil: 1
+    recoilTime: 30
+    shootSound: pew
+    ejectEffect: casing1
+    targetAir: true
+    targetGround: false
+    bullet: {
+      type: FlakBulletType
+      damage: 50
+      speed: 20
+      lifetime: 15
+   },
+  }
+
+   {
+      name: MegaRocketLauncher
+      x: -3,
+      y: -6.5,
+      rotateSpeed: 2.5,
+      targetAir: false,
+      targetGround: true,
+      mirror: true,
+      rotate: true,
+      shootEffect: "missileTrail",
+      layerOffset: 1,
+      targetAir: false,
+      targetGround: true,
+      ignoreRotation: true,
+      followRotation: true,
+      rotateShooting: false,
+      reload: 10,
+      recoil: 1.7,
+      shootSound: "missileSmall",
+      bullet: {
+        type: MissileBulletType,
+        lifetime: 75,
+        speed: 17,
+        damage: 70,
+        spawnUnit: MegaRocket
+      }
+    }
+
+       {
+      name: MegaRocketLauncher2
+      x: -6,
+      y: -5,
+      rotateSpeed: 2.5,
+      targetAir: false,
+      targetGround: true,
+      mirror: true,
+      rotate: true,
+      shootEffect: "missileTrail",
+      layerOffset: 1,
+      targetAir: false,
+      targetGround: true,
+      ignoreRotation: true,
+      followRotation: true,
+      rotateShooting: false,
+      reload: 10,
+      recoil: 1.7,
+      shootSound: "missileSmall",
+      bullet: {
+        type: MissileBulletType,
+        lifetime: 100,
+        speed: 17,
+        damage: 70,
+        spawnUnit: MegaRocket
+      }
+    }
+
+        {
+      name: browner
+      x: 5
+      y: 7
+      rotateSpeed: 4
+      mirror: true
+      rotate: true
+      layerOffset: 3
+      ignoreRotation: false
+      followRotation: true
+      rotateShooting: false
+      shootEffect: shootSmall
+      reload: 15
+      recoil: 1
+      recoilTime: 30
+      shootSound: pew
+      ejectEffect: casing1
+
+      bullet: {
+        type: ArtilleryBulletType
+        trailMult: 0.8
+        trailColor: ff7f14ff
+        frontColor: ff9a00ff
+        backColor: ffa621ff
+        width: 17
+        height: 17
+        status: blasted
+        hitSize: 0.4
+        shootEffect: shootBig2
+        damage: 2200
+        collides: false
+        collidesTiles: true
+        collidesAir: false
+        splashDamageRadius: 20
+        splashDamage: 1200
+        speed: 5
+        lifetime:250
+      }
+    }
+
+]
+
+research: {
+  parent: megalofabricator
+  requirements: [
+    silicon/100
+  ]
+}

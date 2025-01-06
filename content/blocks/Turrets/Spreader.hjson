@@ -1,0 +1,73 @@
+name:"LGun"
+targetair: true
+targetground: true
+hidden:true
+health: 15000
+size: 2
+type: PowerTurret
+range: 500
+liquidCapacity: 20
+inaccuracy: 0
+buildCost: 240
+category: turret
+reload: 150
+cooldown: 150
+recoils: 5
+heatColor: ffff00
+shootSound: sniper
+shoot: {
+    type: ShootAlternate
+    shots: 1
+    barrels: 1
+    spread: 15
+}
+shootType: {
+
+    type: BasicBulletType
+    width: 20
+    height: 20
+    speed: 5
+    damage: 1000
+    splashdamageradius:10
+    splashdamage:500
+    lifetime:160
+    homingPower:1
+    homingdelay:30
+    homingRange: 80
+    smokeEffect: shootSmallSmoke
+    hitEffect: flakExplosion 
+    fragBullet2:{
+    type: LaserBulletType
+    speed: 2
+    lifetime: 10
+    damage:100
+    width: 15
+    length:200
+    hitEffect: hitLancer
+    chargeEffect: lancerLaserCharge
+    }
+    fragBullet:{
+    type: BasicBulletType
+    fragBullets:10
+    width: 10
+    height: 10
+    speed: 5
+    damage: 25
+    splashdamageradius:5
+    splashdamage:50
+    pierceBuilding:true
+    fragBullet:{
+    type: LaserBulletType
+    speed: 2
+    lifetime: 2
+    damage:50
+    width: 10
+    length:100
+    hitEffect: hitLancer
+    chargeEffect: lancerLaserCharge
+    }
+    }
+
+}
+
+requirements: []

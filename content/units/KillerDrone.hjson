@@ -1,0 +1,79 @@
+type: flying
+name: Killer Drone
+health: 2500
+speed: 20
+hitSize: 3
+omniMovement: false
+outlineColor: 2d2f39
+flying: true
+layerOffset: -1
+trailColor: ffb114
+trailLength: 10
+
+weapons: [
+
+  {
+       shootCone: 140
+       mirror: false
+       shootEffect: none 
+       x: 0
+       y: 0 
+       reload:20
+       
+        bullet: {
+       type: BombBulletType
+       splashDamageRadius: 50
+       splashDamage: 250
+       killShooter: false 
+       instantDisappear: true 
+       hittable: false 
+       collidesAir: true 
+       status: melting 
+       pierce: true
+       hitEffect: [ 
+         { 
+           type: WaveEffect 
+           lifetime: 35 
+           sizeFrom: 20 
+           sizeTo: 50 
+           strokeFrom: 9 
+           strokeTo: 3
+           colorFrom: ffca14
+           colorTo: ffo010
+
+
+         } 
+         ] 
+         } 
+     } 
+
+ {
+       name:killer-drone-laser
+       rotate:true
+       shootCone: 140
+       mirror: false
+       shootEffect: none 
+       x: 0
+       y: 0 
+       shootSound: laser
+       reload:30
+       bullet: {
+          type: LaserBulletType
+    speed: 2
+    lifetime: 10
+    damage:50
+    width: 10
+    length:100
+    hitEffect: hitLancer
+    chargeEffect: lancerLaserCharge
+        } 
+     } 
+
+ ]
+
+ research: {
+  parent: megalofabricator
+  requirements: [
+    silicon/100
+  ]
+}

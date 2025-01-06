@@ -1,0 +1,41 @@
+type: UnitFactory
+
+name: megalo fabricator
+health: 1500
+size: 4
+
+consumes: {
+  power: 100
+}
+
+plans: [
+  {unit: MegaloTank
+    time: 30000
+    requirements: []}
+        {unit: KillerDrone
+    time: 10000
+    requirements: []}
+        {unit: Cracker
+    time: 10000
+    requirements: []}
+      {unit: Kraken
+    time: 30000
+    requirements: []}
+    {unit: PurplerOfWorlds
+    time: 4000
+    requirements: []}
+]
+
+requirements: [
+  silicon/100
+  lead/100
+  copper/300
+]
+
+category: units
+research: {
+  parent: ground-factory
+  requirements: [
+    silicon/100
+  ]
+}

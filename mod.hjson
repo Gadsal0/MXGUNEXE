@@ -1,0 +1,8 @@
+name: "mxegun"
+displayName: "mxegun"
+author: '''gadsal0'''
+description: '''funneh'''
+
+version: "1.0"
+minGameVersion: "146"
+repo: "https://github.com/Gadsal0/MXGUN"

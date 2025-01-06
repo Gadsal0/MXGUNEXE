@@ -1,0 +1,65 @@
+name: CrackingRocket
+type: missile
+controller: MissileAI
+flying: true
+speed: 9
+lifetime: 100
+hidden: true
+targetAir: false
+targetGround: true
+radius: 50
+envEnabled: 17 
+envDisabled: 0 
+outlineColor: 2d2f39
+engineColor: aa4dff
+trailColor: aa4dff
+engineSize: 2.8 
+engineOffset: 7
+rotateSpeed: 0.60 
+trailLength: 21
+missileAccelTime: 15 
+lowAltitude: true 
+fogRadius: 9
+health: 10000
+allowedInPayloads: false 
+useUnitCap: false 
+playerControllable: false 
+physics: false 
+createWreck: false 
+createScorch: true
+weapons: [
+    {
+       shootCone: 140
+       mirror: false
+       shootOnDeath: true 
+       shootEffect: none 
+       x: 0
+       y: 0 
+       despawnHit: true 
+       
+        bullet: {
+       type: BombBulletType
+       splashDamageRadius: 200
+       splashDamage: 1000
+       instantDisappear: true 
+       killShooter: true 
+       hittable: false 
+       collidesAir: true 
+       status: burning
+       pierce: true
+       hitEffect: [ 
+         { 
+           type: WaveEffect 
+           lifetime: 10
+           sizeFrom: 20 
+           sizeTo: 100
+           strokeFrom: 9 
+           strokeTo: 0 
+           colorFrom: ffca14
+           colorTo: ffo010
+         } 
+       ]
+
+         } 
+     } 
+ ]
