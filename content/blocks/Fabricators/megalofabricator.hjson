@@ -25,17 +25,10 @@ plans: [
     time: 4000
     requirements: []}
 ]
-
-requirements: [
-  silicon/100
-  lead/100
-  copper/300
-]
-
+requirements: []
 category: units
+
 research: {
   parent: ground-factory
-  requirements: [
-    silicon/100
-  ]
+  requirements: []
 }
