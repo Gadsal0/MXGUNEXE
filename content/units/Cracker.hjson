@@ -88,7 +88,5 @@ weapons: [
 
  research: {
   parent: megalofabricator
-  requirements: [
-    silicon/100
-  ]
+  requirements: []
 }
