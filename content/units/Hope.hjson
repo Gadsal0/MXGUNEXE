@@ -22,16 +22,18 @@ weapons: [
        reload:100
        bullet: {
       type: ShrapnelBulletType
-      damage:450
+      damage:500
       fromcolor:084ebf
       tocolor:5474a8
-      splashDamageRadius: 40
-      splashDamage: 20
       lightning: 7
       lightningDamage: 50
       lightningLength: 6,
       lightningCone: 360,
       lightningLengthRand: 11
+      serrations:3
+      serrationSpacing:15
+      length:150
+      width:10
       } 
 
      } 
