@@ -10,11 +10,33 @@ trailLength: 5
 engineSize: 2.8 
 enginecolor:00aeff
 
-weapons[
+weapons: [
+{
+       name:saver
+       rotate:true
+       mirror: true
+       shootEffect: none 
+       x: 5
+       y: -1.5
+       shootSound: mchgun
+       reload:100
+       bullet: {
+      type: ShrapnelBulletType
+      damage:450
+      fromcolor:084ebf
+      tocolor:5474a8
+      splashDamageRadius: 40
+      splashDamage: 20
+      lightning: 7
+      lightningDamage: 50
+      lightningLength: 6,
+      lightningCone: 360,
+      lightningLengthRand: 11
+      } 
 
+     } 
 ]
 
 research:{
 parent:megalofabricator
-requirements[]
-}
+requirements:[}}
