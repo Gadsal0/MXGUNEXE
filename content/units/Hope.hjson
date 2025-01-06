@@ -39,4 +39,4 @@ weapons: [
 
 research:{
 parent:megalofabricator
-requirements:[}}
+requirements:[{}]}
