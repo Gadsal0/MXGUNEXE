@@ -97,8 +97,6 @@ weapons: [
       shootEffect: "missileTrail",
       layerOffset: 1,
       targetAir: false,
-      rotationLimit:95,
-      baseRotation:-45,
       targetGround: true,
       ignoreRotation: true,
       followRotation: true,
@@ -117,7 +115,5 @@ weapons: [
 
  research: {
   parent: megalofabricator
-  requirements: [
-    silicon/100
-  ]
+  requirements: []
 }
