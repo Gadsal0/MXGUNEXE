@@ -4,5 +4,5 @@
 	"temperature": 0,
     "viscosity": 0.8,
     "color": "a4a2bd",
-    "HeatCapacity":100
+    "HeatCapacity":1000
 }
