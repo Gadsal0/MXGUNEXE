@@ -1,0 +1,20 @@
+type:flying
+name: hope
+health:3500
+shieldhealth:2000
+speed:7.5
+hitsize:5
+omnimovement:false
+trailColor: 00aeff
+trailLength: 5
+engineSize: 2.8 
+enginecolor:00aeff
+
+weapons[
+
+]
+
+research:{
+parent:megalofabricator
+requirements[]
+}
