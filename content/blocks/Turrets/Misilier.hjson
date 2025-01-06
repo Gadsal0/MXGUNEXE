@@ -1,4 +1,4 @@
-name: "small-unit-missile-turret"
+name: "Misilier"
 type: "turret"
 targetair: true
 targetground: true
