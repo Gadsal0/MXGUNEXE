@@ -1,6 +1,6 @@
 type: flying
 name: Killer Drone
-health: 2500
+health: 1000
 speed: 20
 hitSize: 3
 omniMovement: false
