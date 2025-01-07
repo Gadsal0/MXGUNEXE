@@ -1,11 +1,12 @@
 type: Wall
-size: 3
+size: 2
 
-health: 171000
-shieldhealth:17100
+health: 16000
+shieldhealth:14000
 chanceDeflect: 95
 lightningChance: 0.15
 lightningDamage: 450
+absorbslasers:true
 
 requirements: []
 
