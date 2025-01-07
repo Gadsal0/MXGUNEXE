@@ -1,4 +1,4 @@
-name: Towrocket
+name: Mega Rocket
 type: missile
 controller: MissileAI
 flying: true
