@@ -1,0 +1,13 @@
+type: Wall
+size: 3
+
+health: 171000
+shieldhealth:17100
+chanceDeflect: 95
+lightningChance: 0.15
+lightningDamage: 450
+
+requirements: []
+
+category: defense
+research: Duo
