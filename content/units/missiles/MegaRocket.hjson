@@ -48,14 +48,6 @@ weapons: [
        killShooter: true 
        hittable: false 
        collidesAir: true 
-       fragbullet:{
-        "type": "BasicBulletType",
-        "damage": 18,
-        "speed": 4,
-        "lifetime": 80,
-        "splashDamage": 20,
-        "splashDamageRadius": 12
-      }
        }
        hitEffect: [ 
          { 
