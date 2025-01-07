@@ -1,7 +1,8 @@
-type: ShieldWall
+type: shieldwall
 size: 2
 
 health: 75000
+shieldhealth:25000
 chanceDeflect: 95
 lightningChance: 0.15
 lightningDamage: 450
