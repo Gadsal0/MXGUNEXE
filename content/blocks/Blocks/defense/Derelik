@@ -1,7 +1,7 @@
 {
+    "type": "Wall",
 	"name": "Wolframium Wall",
 	"description": "Un muro resistente para protejer bases contra unidades de crakium",
-	"type": "Wall",
 	"health": 20000,
     "ShieldHealth":20000,
     "range": 4,
