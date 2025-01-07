@@ -87,6 +87,6 @@ weapons: [
  ]
 
  research: {
-  parent: megalofabricator
+  parent: PurplingFabricator
   requirements: []
 }

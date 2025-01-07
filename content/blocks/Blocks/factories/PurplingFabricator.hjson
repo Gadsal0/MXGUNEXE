@@ -1,0 +1,31 @@
+type: UnitFactory
+
+name: purpling fabricador
+health: 1500
+size: 4
+
+consumes: {
+  power: 100
+}
+
+plans: [
+  {unit: KillerDrone
+    time: 15000
+    requirements: []}
+      {unit: Cracker
+    time: 15000
+    requirements: []}
+      {unit: Kraken
+    time: 25000
+    requirements: []}
+      {unit: PurplerOfWorlds
+    time: 35000
+    requirements: []}
+]
+requirements: []
+category: units
+
+research: {
+  parent: CrakiumExtractor
+  requirements: []
+}

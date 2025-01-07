@@ -12,23 +12,11 @@ plans: [
   {unit: MegaloTank
     time: 30000
     requirements: []}
-        {unit: KillerDrone
-    time: 10000
-    requirements: []}
-        {unit: Cracker
-    time: 10000
-    requirements: []}
-      {unit: Kraken
-    time: 30000
-    requirements: []}
-    {unit: PurplerOfWorlds
-    time: 4000
-    requirements: []}
 ]
 requirements: []
 category: units
 
 research: {
-  parent: ground-factory
+  parent: CrakiumExtractor
   requirements: []
 }
