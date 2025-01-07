@@ -1,7 +1,7 @@
 {
 	"name": "Crakium",
 	"temperature": -1,
-    "viscosity": 0,
+    "viscosity": 0.5,
     "color": "a4a2bd",
     "heatcapacity":1000
 }
